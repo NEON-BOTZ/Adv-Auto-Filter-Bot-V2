@@ -81,7 +81,7 @@ async def auto_filter(bot, update):
             file_size = "" if file_size == ("[0 B]") else file_size
             
             # add emoji down below inside " " if you want..
-            button_text = f"{file_name}" + "{file_size}"
+            button_text = f"🎬 {file_size} {file_name}"
             
 
             if file_type == "video":
@@ -156,7 +156,7 @@ async def auto_filter(bot, update):
         if len_result != 1:
             result[0].append(
                 [
-                    InlineKeyboardButton("Next ⏩", callback_data=f"navigate(0|next|{query})")
+                    InlineKeyboardButton("Next ➩", callback_data=f"navigate(0|next|{query})")
                 ]
             )
         
@@ -212,7 +212,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"**Found {(len_results)} Results For Your Query:** <code>{query}</code>",
+                text=f"<b>🎬 Here Is The Movie : {query}\nResults : {(len_results)}\n\n© By Pixar Movies<b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
