@@ -1601,8 +1601,7 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/CrazyBotszGrp">@CrazyBotszGrp</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/AlbertEinsteinTG/Adv-Filter-Bot-V2">Source</a>"""
+    text+="""\n<b><i>Bot Support:</i></b> <a href="https://t.me/CrazyBotszGrp">@CrazyBotszGrp</a>\n"""
 
     buttons = [
         [
@@ -1668,6 +1667,22 @@ async def callback_data(bot, update: CallbackQuery):
         
         await update.message.edit_text(
             Translation.HELP_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html",
+            disable_web_page_preview=True
+        )
+
+
+
+    elif query_data == "source":
+        buttons = [[
+            InlineKeyboardButton('Source Code', url='https://github.com/')
+        ]]
+    
+        reply_markup = InlineKeyboardMarkup(buttons)
+        
+        await update.message.edit_text(
+            Translation.SOURCE_TEXT,
             reply_markup=reply_markup,
             parse_mode="html",
             disable_web_page_preview=True
