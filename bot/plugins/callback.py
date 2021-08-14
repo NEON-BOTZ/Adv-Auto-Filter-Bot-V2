@@ -1673,7 +1673,6 @@ async def callback_data(bot, update: CallbackQuery):
         )
 
 
-
     elif query_data == "source":
         buttons = [[
             InlineKeyboardButton('Source Code', url='https://github.com/')
