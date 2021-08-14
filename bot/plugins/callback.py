@@ -1675,13 +1675,13 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "source":
         buttons = [[
-            InlineKeyboardButton('Source Code', url='https://github.com/')
+            InlineKeyboardButton('Source Code', url='https://github.com')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
         
         await update.message.edit_text(
-            Translation.SOURCE_TEXT,
+            Translation.SOURCE,
             reply_markup=reply_markup,
             parse_mode="html",
             disable_web_page_preview=True
