@@ -6,7 +6,7 @@ class Translation(object):
     
     START_TEXT = """<b>ഹായ് {}
 
-ഞാൻ <a href="https://t.me/joinchat/JaGxIJ14wV9iZGVl">Film Corner</a> എന്ന ഗ്രൂപ്പിൽ മൂവീസ് കൊടുക്കുന്ന ബോട്ട് ആണ് 
+ഞാൻ <a href="https://t.me/joinchat/R8ufYq3SK282MTdl">Film Corner</a> എന്ന ഗ്രൂപ്പിൽ മൂവീസ് കൊടുക്കുന്ന ബോട്ട് ആണ് 
  
 എന്നെ മറ്റു ഗ്രൂപ്പിൽ ഒന്നും ഉപയോഗിക്കാൻ കഴിയുകയില്ല.</b>"""    
     
