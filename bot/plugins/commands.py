@@ -132,7 +132,7 @@ async def help(bot, update):
 @Client.on_message(filters.command(["source"]) & filters.private, group=1)
 async def source(bot, update):
     buttons = [[
-        InlineKeyboardButton('Source Code', url='https://github.com)
+        InlineKeyboardButton('Source Code', url='https://github.com),
     ],[
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
