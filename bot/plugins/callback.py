@@ -1675,7 +1675,7 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "sourcecode":
         buttons = [[
-            InlineKeyboardButton("Source Code", url="https://github.com")
+            InlineKeyboardButton("Source Code", url="https://github.com/ViperXD/sturdy-octo-adventure")
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
