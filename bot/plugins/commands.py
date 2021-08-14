@@ -89,8 +89,11 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('🤖 About', callback_data='about'),
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('⚙️ HELP', callback_data='about'),
+        InlineKeyboardButton('🎬 CHANNEL ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl')
+    ],
+    [   InlineKeyboardButton('🗃 SOURCE', callback_data='source'),
+        InlineKeyboardButton('CLOSE 🔐', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
