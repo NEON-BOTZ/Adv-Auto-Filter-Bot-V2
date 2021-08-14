@@ -19,3 +19,7 @@ class Translation(object):
 എന്നെ ഉണ്ടാക്കിയത് <a href="https://t.me/Vivek_Kerala">Vivek</a> ആണ്.
 
 ഞാൻ Pyrogram കൊണ്ടാണ് ഉണ്ടാക്കിയത്.</b> """
+
+    SOURCE_TEXT = """
+<b>Click On Source Code 👇🏻</b>
+"""
