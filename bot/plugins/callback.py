@@ -1608,7 +1608,7 @@ async def cb_about(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/Vivek_keral"
+                    "My Dev ⚡", url="https://t.me/Vivek_kerala"
                 ),
                 
             InlineKeyboardButton
@@ -1639,10 +1639,11 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-        InlineKeyboardButton('👨🏻‍🎓 My Dev', url="https://t.me/VIVEK_KERALA"),
-        InlineKeyboardButton('🤖 About', callback_data='about')
-    ],[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('⚙️ HELP', callback_data='about'),
+        InlineKeyboardButton('🎬 CHANNEL ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl')
+    ],
+    [   InlineKeyboardButton('🗃 SOURCE', callback_data='source'),
+        InlineKeyboardButton('CLOSE 🔐', callback_data='close')
     ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
