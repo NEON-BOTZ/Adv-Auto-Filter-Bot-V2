@@ -14,11 +14,8 @@ class Translation(object):
 <b>നിങ്ങൾക്ക് എന്നെ ഉപയോഗിക്കാൻ പറ്റില്ല എന്ന് പറഞ്ഞതല്ലേ 😡</b>
 """
     
-    ABOUT_TEXT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>
-    
-<b>➥ Creator</b> : <b><i><a href="https://t.me/Vivek_Kerala">Vivek</a></i></b>
+    ABOUT_TEXT = """<b>എന്റെ പേര് Julie എന്നാണ്.
 
-<b>➥ Language</b> : <code>Python3</code>
+എന്നെ ഉണ്ടാക്കിയത് <a href="https://t.me/Vivek_Kerala">Vivek</a> ആണ്.
 
-<b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
-"""
+ഞാൻ Pyrogram കൊണ്ടാണ് ഉണ്ടാക്കിയത്.</b> """
