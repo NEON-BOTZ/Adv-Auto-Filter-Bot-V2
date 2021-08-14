@@ -20,6 +20,4 @@ class Translation(object):
 
 ഞാൻ Pyrogram കൊണ്ടാണ് ഉണ്ടാക്കിയത്.</b> """
 
-    SOURCE_TEXT = """
-<b>Click On Source Code 👇🏻</b>
-"""
+    SOURCE_TEXT = """<b>Click On Source Code 👇🏻</b>"""
