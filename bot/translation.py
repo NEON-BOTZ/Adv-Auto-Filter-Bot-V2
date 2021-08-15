@@ -16,13 +16,16 @@ class Translation(object):
 
     SOURCE_TEXT = """<b>Source Code Of This Bot 👇🏻
 
+Codes I Used In This Bot Are Taken From These Repos Thanks To the devs For making such Bots :) 
+
 ▪ Autofilter Bot
 Source Code : <a href="https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2">Click Here</a>
+Developer : <a href="https://github.com/CrazyBotsz/">Click Here</a>
 
 ▪ More Features
-Developers : <a href="https://t.me/Vivek_Kerala">Vivek</a>
+Developer : <a href="https://t.me/Vivek_Kerala">Click Here</a>
 
-Click On Source Code 👇🏻</b>"""
+This Bot Is Developed AutoFilter Bot + Many More Repos, My Main Dev Is <a href="https://t.me/Vivek_Kerala">He</a> :)</b>"""
     
     ABOUT_TEXT = """<b>എന്റെ പേര് Julie എന്നാണ്.
 
