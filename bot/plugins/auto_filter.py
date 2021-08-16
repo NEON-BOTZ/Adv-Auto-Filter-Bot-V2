@@ -126,11 +126,10 @@ async def auto_filter(bot, update):
             )
         
     else: 
-         Send_message = await message.reply_photo(
-         photo="https://telegra.ph/file/a3937c3ddc19bb3300d89.jpg",
+         Send_message = await bot.send_message(
          chat_id=update.chat.id,
-         caption="<b>Couldn't Find This Movie ☹️\n\nTry Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", 
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔎 Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ", url="http://google.com")]]),
+         text="<b>Couldn't Find This Movie ☹️\n\nTry Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", 
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔎 Search On Google", url="http://google.com")]]),
          parse_mode="html",
          disable_web_page_preview=True,
          reply_to_message_id=update.message_id
@@ -295,4 +294,3 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
             
             ACTIVE_CHATS[str(group_id)] = achatId
     return 
-
