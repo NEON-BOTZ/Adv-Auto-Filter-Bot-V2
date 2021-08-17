@@ -210,7 +210,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"<b>🎬 Here Is The Movie : {query}\n\nResults : {(len_results)}\n\n© By <a href="https://t.me/joinchat/R8ufYq3SK282MTdl">Film Corner</a></b>",
+                text=f"<b>🎬 Here Is The Movie : {query}\n\nResults : {(len_results)}\n\n© By <a href='https://t.me/joinchat/R8ufYq3SK282MTdl'>Film Corner</a></b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
