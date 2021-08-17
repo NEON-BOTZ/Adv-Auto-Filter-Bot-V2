@@ -128,7 +128,7 @@ async def auto_filter(bot, update):
     else: 
          Send_message = await bot.send_message(
          chat_id=update.chat.id,
-         text="<b>Couldn't Find This Movie ☹️\n\nTry Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", 
+         text="<b>Couldn't Find This Movie ☹️\n\nസിനിമയുടെ പേര് Google ൽ Search ചെയ്ത് ശരിയായ പേര് ഇവിടെ കൊടുക്കു.</b>", 
          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔎 Search On Google", url="http://google.com")]]),
          parse_mode="html",
          disable_web_page_preview=True,
@@ -189,13 +189,13 @@ async def auto_filter(bot, update):
                 if ((len(ibuttons)%2) == 0):
                     ibuttons.append(
                         [
-                            InlineKeyboardButton(f"⚜ {chat_name} ⚜", url=invite_link)
+                            InlineKeyboardButton(f"🔘 Join On Our Channel 🔘", url=invite_link)
                         ]
                     )
 
                 else:
                     ibuttons[-1].append(
-                        InlineKeyboardButton(f"⚜ {chat_name} ⚜", url=invite_link)
+                        InlineKeyboardButton(f"🔘 Join On Our Channel 🔘", url=invite_link)
                     )
                 
             for x in ibuttons:
