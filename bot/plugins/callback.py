@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<b>🎬 Here Is The Movie : {query}\n\nResults : {(len_results)}\n\n© By <a href="https://t.me/joinchat/R8ufYq3SK282MTdl">Film Corner</a></b>"
+    text=f"<b>🎬 Here Is The Movie : {query}\n\nResults : {(len_results)}\n\n© By <a href='https://t.me/joinchat/R8ufYq3SK282MTdl'>Film Corner</a></b>"
         
     try:
         await update.message.edit(
