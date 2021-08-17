@@ -23,7 +23,7 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
         
-        caption = file_caption if file_caption != ("" or None) else ("<b>" + file_name + "</b>")
+        caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
         
         if file_type == "document":
         
@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Close 🔐', callback_data='close'
+                                    'Close 🔐', callback_data='close', '🎬 Channel ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Close 🔐', callback_data='close'
+                                    'Close 🔐', callback_data='close', '🎬 Channel ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Close 🔐', callback_data='close'
+                                    'Close 🔐', callback_data='close', '🎬 Channel ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'
                                 )
                         ]
                     ]
@@ -89,11 +89,11 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚙️ HELP', callback_data='help'),
-        InlineKeyboardButton('🎬 CHANNEL ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl')
+        InlineKeyboardButton('⚙️ Help', callback_data='help'),
+        InlineKeyboardButton('🎬 Channel ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl')
     ],
-    [   InlineKeyboardButton('🗃 SOURCE', callback_data='sourcecode'),
-        InlineKeyboardButton('CLOSE 🔐', callback_data='close')
+    [   InlineKeyboardButton('🗃 Source', callback_data='sourcecode'),
+        InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
