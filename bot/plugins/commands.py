@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Close 🔐', callback_data='close', '🎬 Channel ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'
+                                    'Close 🔐', callback_data='close'
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Close 🔐', callback_data='close', '🎬 Channel ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'
+                                    'Close 🔐', callback_data='close'
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Close 🔐', callback_data='close', '🎬 Channel ', url='https://t.me/joinchat/JaGxIJ14wV9iZGVl'
+                                    'Close 🔐', callback_data='close'
                                 )
                         ]
                     ]
