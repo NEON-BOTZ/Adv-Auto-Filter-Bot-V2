@@ -109,24 +109,6 @@ async def start(bot, update):
     )
 
 
-@Client.on_message(filters.private & filters.others group=1)
-async def movies(bot, update):
-    buttons = [[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
-    ]]
-    
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=f"<b>നിങ്ങൾക്ക് എന്നെ ഉപയോഗിക്കാൻ പറ്റില്ല 😤</b>",
-        reply_markup=reply_markup,
-        parse_mode="html",
-        disable_web_page_preview=true,
-        reply_to_message_id=update.message_id
-    )
-
-
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
