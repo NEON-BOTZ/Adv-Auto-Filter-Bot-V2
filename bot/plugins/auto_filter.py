@@ -213,6 +213,7 @@ async def auto_filter(bot, update):
                 text=f"<b>🎬 Here Is The Movie : {query}\n\nResults : {(len_results)}\n\n© By <a href='https://t.me/joinchat/R8ufYq3SK282MTdl'>Film Corner</a></b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
+                disable_web_page_preview=True,
                 reply_to_message_id=update.message_id
             )
 
